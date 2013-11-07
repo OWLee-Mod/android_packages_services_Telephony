@@ -37,6 +37,50 @@
     </PreferenceCategory>
 
   <PreferenceCategory
+<<<<<<< HEAD
+=======
+      android:title="@string/incall_vibration">
+
+      <CheckBoxPreference
+          android:key="button_vibrate_outgoing"
+          android:title="@string/vibrate_outgoing"
+          android:persistent="true" />
+
+      <CheckBoxPreference
+          android:key="button_vibrate_call_waiting"
+          android:title="@string/vibrate_call_waiting"
+          android:persistent="true" />
+
+      <CheckBoxPreference
+          android:key="button_vibrate_hangup"
+          android:title="@string/vibrate_hangup"
+          android:persistent="true" />
+
+      <CheckBoxPreference
+          android:key="button_vibrate_45"
+          android:title="@string/vibrate_45"
+          android:persistent="true"
+          android:summary="@string/vibrate_45_sum" />
+
+  </PreferenceCategory>
+
+  <PreferenceCategory
+      android:key="pref_advanced_settings"
+      android:title="@string/advanced_setting">
+
+      <PreferenceScreen
+          android:key="button_blacklist"
+          android:title="@string/blacklist_title"
+          android:persistent="false">
+          <intent android:action="android.intent.action.MAIN"
+              android:targetPackage="com.android.settings"
+              android:targetClass="com.android.settings.Settings$BlacklistSettingsActivity" />
+      </PreferenceScreen>
+
+  </PreferenceCategory>
+
+  <PreferenceCategory
+>>>>>>> f7fb9e1... Add back in-call vibration.
       android:key="button_misc_category_key"
       android:title="@string/other_settings"
       android:persistent="false" />
