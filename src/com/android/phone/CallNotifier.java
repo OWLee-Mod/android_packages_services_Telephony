@@ -948,8 +948,6 @@ public class CallNotifier extends Handler
             Log.w(LOG_TAG, "onDisconnect: null connection");
         }
 
-<<<<<<< HEAD
-=======
         boolean disconnectedDueToBlacklist = false;
         if (c != null) {
             disconnectedDueToBlacklist = BLACKLIST.equals(c.getUserData());
@@ -959,7 +957,6 @@ public class CallNotifier extends Handler
             }
         }
 
->>>>>>> f7fb9e1... Add back in-call vibration.
         int autoretrySetting = 0;
         if ((c != null) && (c.getCall().getPhone().getPhoneType() == PhoneConstants.PHONE_TYPE_CDMA)) {
             autoretrySetting = android.provider.Settings.Global.getInt(mApplication.

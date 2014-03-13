@@ -37,8 +37,7 @@
     </PreferenceCategory>
 
   <PreferenceCategory
-<<<<<<< HEAD
-=======
+
       android:title="@string/incall_vibration">
 
       <CheckBoxPreference
@@ -74,22 +73,7 @@
           android:defaultValue="false"
           android:summary="@string/show_ssn_summary" />
 
-      <PreferenceScreen
-          android:key="button_blacklist"
-          android:title="@string/blacklist_title"
-          android:persistent="false">
-          <intent android:action="android.intent.action.MAIN"
-              android:targetPackage="com.android.settings"
-              android:targetClass="com.android.settings.Settings$BlacklistSettingsActivity" />
-      </PreferenceScreen>
-
   </PreferenceCategory>
-
-  <PreferenceCategory
->>>>>>> f7fb9e1... Add back in-call vibration.
-      android:key="button_misc_category_key"
-      android:title="@string/other_settings"
-      android:persistent="false" />
 
   <PreferenceScreen
       android:key="button_voicemail_category_key"
