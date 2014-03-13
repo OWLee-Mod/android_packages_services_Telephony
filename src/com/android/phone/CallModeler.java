@@ -359,8 +359,6 @@ public class CallModeler extends Handler {
         PhoneGlobals.getInstance().updateWakeState();
     }
 
-<<<<<<< HEAD
-=======
     private void onSuppServiceNotification(AsyncResult r) {
         SuppServiceNotification notification = (SuppServiceNotification) r.result;
         Phone gsmPhone = PhoneUtils.getGsmPhone(mCallManager);
@@ -404,7 +402,6 @@ public class CallModeler extends Handler {
         }
     }
 
->>>>>>> bf7b9a2... Add back supplementary service notification handling.
     /**
      * Go through the Calls from CallManager and return the list of calls that were updated.
      * Method also finds any orphaned Calls (Connection objects no longer returned by telephony as

@@ -29,11 +29,9 @@ import com.android.internal.telephony.cdma.CdmaCallWaitingNotification;
 import com.android.internal.telephony.cdma.CdmaInformationRecords.CdmaDisplayInfoRec;
 import com.android.internal.telephony.cdma.CdmaInformationRecords.CdmaSignalInfoRec;
 import com.android.internal.telephony.cdma.SignalToneUtil;
-<<<<<<< HEAD
-=======
+
 import com.android.internal.telephony.gsm.SuppServiceNotification;
 import com.android.internal.telephony.util.BlacklistUtils;
->>>>>>> bf7b9a2... Add back supplementary service notification handling.
 
 import android.app.ActivityManagerNative;
 import android.bluetooth.BluetoothAdapter;
