@@ -31,7 +31,6 @@ import com.android.internal.telephony.cdma.CdmaInformationRecords.CdmaSignalInfo
 import com.android.internal.telephony.cdma.SignalToneUtil;
 
 import com.android.internal.telephony.gsm.SuppServiceNotification;
-import com.android.internal.telephony.util.BlacklistUtils;
 
 import android.app.ActivityManagerNative;
 import android.bluetooth.BluetoothAdapter;
@@ -946,15 +945,6 @@ public class CallNotifier extends Handler
                   + ", date = " + c.getCreateTime());
         } else {
             Log.w(LOG_TAG, "onDisconnect: null connection");
-        }
-
-        boolean disconnectedDueToBlacklist = false;
-        if (c != null) {
-            disconnectedDueToBlacklist = BLACKLIST.equals(c.getUserData());
-            boolean vibHangup = PhoneUtils.PhoneSettings.vibHangup(mApplication);
-            if (!disconnectedDueToBlacklist && vibHangup && c.getDurationMillis() > 0) {
-                vibrate(50, 100, 50);
-            }
         }
 
         int autoretrySetting = 0;
